@@ -46,6 +46,7 @@ export default function ContactMe() {
 	const [Message, setMessage] = useState('')
 
 	async function SendEmail() {
+		return
 		// send Email
 		const EmailData = {Name, Email, Message}
 
@@ -63,7 +64,7 @@ export default function ContactMe() {
 		}
 		// Reset the reCAPTCHA so that it can be executed again if user
 		// submits another email.
-		ReCAPTCHA.current.reset()
+		// ReCAPTCHA.current.reset()
 	}
 
 	return (
@@ -73,12 +74,12 @@ export default function ContactMe() {
 				setemail={setEmail}
 				setmessage={setMessage}
 			/>
-			<ReCAPTCHA
+			{/*<ReCAPTCHA
 				ref={ReCAPTCHA}
 				size="invisible"
 				sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
 				onChange={(e: any) => onReCAPTCHAChange(e)}
-			/>
+	/>*/}
 			<Button
 				PlaceHolder="Enviar mensagem "
 				evt={SendEmail}
