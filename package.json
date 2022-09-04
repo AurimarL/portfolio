@@ -1,0 +1,63 @@
+{
+	"name": "aurimar",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"bonito": "prettier --write .",
+		"build-storybook": "build-storybook",
+		"storybook": "start-storybook -p 6006",
+		"lint": "eslint --ext .jsx --ext .js --ext .tsx --ext .ts"
+	},
+	"resolutions": {
+		"webpack": "^5"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.1.2",
+		"@fortawesome/free-solid-svg-icons": "^6.1.2",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"bootstrap": "^5.2.0",
+		"next": "12.2.5",
+		"react": "18.2.0",
+		"react-bootstrap": "^2.5.0",
+		"react-dom": "18.2.0",
+		"react-google-recaptcha": "^2.1.0",
+		"react-icons": "^4.4.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.18.10",
+		"@storybook/addon-actions": "^6.5.10",
+		"@storybook/addon-essentials": "^6.5.10",
+		"@storybook/addon-interactions": "^6.5.10",
+		"@storybook/addon-links": "^6.5.10",
+		"@storybook/addon-postcss": "^2.0.0",
+		"@storybook/builder-webpack5": "^6.5.10",
+		"@storybook/manager-webpack5": "^6.5.10",
+		"@storybook/react": "^6.5.10",
+		"@storybook/testing-library": "^0.0.13",
+		"@types/node": "18.7.6",
+		"@types/react": "18.0.17",
+		"@types/react-dom": "18.0.6",
+		"@types/react-google-recaptcha": "^2.1.5",
+		"@typescript-eslint/eslint-plugin": "^5.33.1",
+		"@typescript-eslint/parser": "^5.33.1",
+		"autoprefixer": "^10.4.8",
+		"babel-loader": "^8.2.5",
+		"eslint": "^8.22.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-next": "12.2.5",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-typescript": "^3.4.2",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.6.1",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.30.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"postcss": "^8.4.16",
+		"prettier": "^2.7.1",
+		"tailwindcss": "^3.1.8",
+		"typescript": "4.7.4"
+	}
+}

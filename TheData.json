@@ -1,0 +1,29 @@
+{
+	"PersonalInfo": {
+		"firstName": "Aurimar",
+		"lastName": "Lopes",
+		"Email": "Aurimardev@gmail.com",
+		"AboutMe": ""
+	},
+	"SocialMedia": {
+		"LinkedIn": "",
+		"GitHub": ""
+	},
+	"Resume": {
+		"Skills": {
+			"FrontEnd": [""],
+			"BackEnd": [""]
+		},
+		"Projects": {
+			"Ondando": {
+				"Image": "",
+				"GitHub": "",
+				"Live": ""
+			}
+		},
+		"SchoolBackround": {
+			"Medio": {},
+			"Faculdade": {}
+		}
+	}
+}
