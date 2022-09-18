@@ -6,7 +6,7 @@ interface ISectionSepare {
 export default function SectionSepare(props: ISectionSepare) {
 	return (
 		<>
-			<h1 className="text-center">
+			<h1 className="text-center ">
 				{'< '} {props.SectionName}
 				{' />'}
 			</h1>

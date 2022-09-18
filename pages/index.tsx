@@ -7,6 +7,8 @@ import ContactMe from '../views/ContactMe'
 import MeSection from '../views/Me'
 import ProjectsSection from '../views/Projects'
 import SkillsSection from '../views/Skills'
+import { GrDocumentPdf } from 'react-icons/gr'
+
 
 const Home: NextPage = () => (
 	<>
@@ -17,9 +19,9 @@ const Home: NextPage = () => (
 		</Head>
 
 		<div id="Home"></div>
-		<Header />
 
-		<div className="container ">
+		<Header />
+		<div className="container flex flex-col  gap-4">
 			<section id="Me">
 				<MeSection />
 			</section>
@@ -31,7 +33,7 @@ const Home: NextPage = () => (
 			</section>
 
 			<section id="Projetos" className="">
-				<SectionSepare SectionName="Projetos">
+				<SectionSepare SectionName="Projects">
 					<ProjectsSection />
 				</SectionSepare>
 			</section>
@@ -41,9 +43,16 @@ const Home: NextPage = () => (
 			*/}
 
 			<section id="Contactar" className="">
-				<SectionSepare SectionName="Contactar">
+				<SectionSepare SectionName="contact">
 					<ContactMe />
 				</SectionSepare>
+			</section>
+			<section className='text-center'>
+				<button className='border-2 w-2/6 text-center p-2 rounded' >
+					<a href='../assets/CV.pdf' download className='flex flex-row justify-center gap-2 no-underline text-black'>
+						<GrDocumentPdf /> CV
+					</a>
+				</button>
 			</section>
 		</div>
 		<Footer />

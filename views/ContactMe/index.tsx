@@ -14,7 +14,7 @@ function ContactForm(props: IContactForm) {
 		<form className="  md:p-4 rounded-md border-2 p-2 border-primaryBlue w-full md:w-fit">
 			<div className="md:pt-2 md:pb-2 m-2 ">
 				<input
-					placeholder="Nome"
+					placeholder="Name"
 					className=" w-full md:w-96 md:text-[30px] border-2 p-1"
 					onChange={(e) => props.setname(e.target.value)}
 				/>
@@ -33,7 +33,7 @@ function ContactForm(props: IContactForm) {
 					name="mensagem"
 					rows={4}
 					className="w-full md:w-1/2 border-2 rounded"
-					placeholder="Mensagem"
+					placeholder="Message"
 					onChange={(e) => props.setmessage(e.target.value)}
 				/>
 			</div>
@@ -81,12 +81,12 @@ export default function ContactMe() {
 				onChange={(e: any) => onReCAPTCHAChange(e)}
 	/>*/}
 			<Button
-				PlaceHolder="Enviar mensagem "
+				PlaceHolder="Send Message"
 				evt={SendEmail}
 				key={undefined}
 				Disable={true}
 			/>
-			<p className="text-[10px]">Email esta desativado</p>
+			<p className="text-[10px]">Email is disabled</p>
 		</>
 	)
 }
