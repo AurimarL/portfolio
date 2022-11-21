@@ -8,7 +8,7 @@ interface SkillsModalProps {
 export function SkillsModal(props: SkillsModalProps) {
 	return (
 		<>
-			<div className="m-2 p-2 border-2 border-black rounded-md">
+			<div className="m-4 p-2 border-2 border-black rounded-md">
 				<div className="border-b-2 border-blue-500">
 					<h1 className="text-center ">{props.TextHeader}</h1>
 				</div>

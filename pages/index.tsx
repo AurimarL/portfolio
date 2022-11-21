@@ -7,8 +7,8 @@ import ContactMe from '../views/ContactMe'
 import MeSection from '../views/Me'
 import ProjectsSection from '../views/Projects'
 import SkillsSection from '../views/Skills'
-import { GrDocumentPdf } from 'react-icons/gr'
-
+import {GrDocumentPdf} from 'react-icons/gr'
+import Button from '../components/Button'
 
 const Home: NextPage = () => (
 	<>
@@ -21,40 +21,40 @@ const Home: NextPage = () => (
 		<div id="Home"></div>
 
 		<Header />
-		<div className="container flex flex-col  gap-4">
+		<main className="container">
 			<section id="Me">
 				<MeSection />
 			</section>
 
 			<section id="Skills">
-				<SectionSepare SectionName="Skills">
-					<SkillsSection />
-				</SectionSepare>
+				<SectionSepare SectionName="Skills" />
+				<SkillsSection />
 			</section>
 
-			<section id="Projetos" className="">
-				<SectionSepare SectionName="Projects">
-					<ProjectsSection />
-				</SectionSepare>
+			<section id="Projetos">
+				<SectionSepare SectionName="Projects" />
+				<ProjectsSection />
 			</section>
 			{/*
 				<section id="Servicos" className="m-4" />
 				<section id="Portofolio" className="m-4" />
 			*/}
 
-			<section id="Contactar" className="">
-				<SectionSepare SectionName="contact">
-					<ContactMe />
-				</SectionSepare>
+			<section id="Contactar">
+				<SectionSepare SectionName="contact" />
+				<ContactMe />
 			</section>
-			<section className='text-center'>
-				<button className='border-2 w-2/6 text-center p-2 rounded' >
-					<a href='../assets/CV.pdf' download className='flex flex-row justify-center gap-2 no-underline text-black'>
+			<section className="text-center">
+				<button className="border-2 w-2/6 text-center p-2 rounded">
+					<a
+						href="../assets/CV.pdf"
+						download
+						className="flex flex-row justify-center gap-2 no-underline text-black">
 						<GrDocumentPdf /> CV
 					</a>
 				</button>
 			</section>
-		</div>
+		</main>
 		<Footer />
 	</>
 )

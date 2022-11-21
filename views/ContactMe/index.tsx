@@ -11,33 +11,35 @@ interface IContactForm {
 
 function ContactForm(props: IContactForm) {
 	return (
-		<form className="  md:p-4 rounded-md border-2 p-2 border-primaryBlue w-full md:w-fit">
-			<div className="md:pt-2 md:pb-2 m-2 ">
-				<input
-					placeholder="Name"
-					className=" w-full md:w-96 md:text-[30px] border-2 p-1"
-					onChange={(e) => props.setname(e.target.value)}
-				/>
-			</div>
-			<div className="md:pt-2 md:pb-2 m-2">
-				<input
-					placeholder="Email"
-					type={'email'}
-					className=" w-full md:w-96 md:text-[30px] border-2 p-1"
-					onChange={(e) => props.setemail(e.target.value)}
-				/>
-			</div>
-			<div className="m-2">
-				<textarea
-					id="mensagem"
-					name="mensagem"
-					rows={4}
-					className="w-full md:w-1/2 border-2 rounded"
-					placeholder="Message"
-					onChange={(e) => props.setmessage(e.target.value)}
-				/>
-			</div>
-		</form>
+		<div className="flex justify-center md:m-8">
+			<form className="  md:p-4 rounded-md border-2 p-2 border-primaryBlue w-full md:w-fit">
+				<div className="md:pt-2 md:pb-2 m-2 ">
+					<input
+						placeholder="Name"
+						className=" w-full md:w-96 md:text-[30px] border-2 p-1"
+						onChange={(e) => props.setname(e.target.value)}
+					/>
+				</div>
+				<div className="md:pt-2 md:pb-2 m-2">
+					<input
+						placeholder="Email"
+						type={'email'}
+						className=" w-full md:w-96 md:text-[30px] border-2 p-1"
+						onChange={(e) => props.setemail(e.target.value)}
+					/>
+				</div>
+				<div className="m-2">
+					<textarea
+						id="mensagem"
+						name="mensagem"
+						rows={4}
+						className="w-full md:w-1/2 border-2 rounded"
+						placeholder="Message"
+						onChange={(e) => props.setmessage(e.target.value)}
+					/>
+				</div>
+			</form>
+		</div>
 	)
 }
 export default function ContactMe() {
@@ -68,7 +70,7 @@ export default function ContactMe() {
 	}
 
 	return (
-		<>
+		<div c>
 			<ContactForm
 				setname={setName}
 				setemail={setEmail}
@@ -80,13 +82,15 @@ export default function ContactMe() {
 				sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''}
 				onChange={(e: any) => onReCAPTCHAChange(e)}
 	/>*/}
-			<Button
-				PlaceHolder="Send Message"
-				evt={SendEmail}
-				key={undefined}
-				Disable={true}
-			/>
-			<p className="text-[10px]">Email is disabled</p>
-		</>
+			<div className="text-center m-2">
+				<Button
+					PlaceHolder="Send Message"
+					evt={SendEmail}
+					key={undefined}
+					Disable={true}
+				/>
+				<p className="text-[10px]">Email is disabled</p>
+			</div>
+		</div>
 	)
 }
