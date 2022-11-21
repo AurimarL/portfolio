@@ -25,7 +25,8 @@
 		"react-bootstrap": "^2.5.0",
 		"react-dom": "18.2.0",
 		"react-google-recaptcha": "^2.1.0",
-		"react-icons": "^4.4.0"
+		"react-icons": "^4.4.0",
+		"react-use-downloader": "^1.2.1"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.10",

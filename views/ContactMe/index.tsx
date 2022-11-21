@@ -16,7 +16,7 @@ function ContactForm(props: IContactForm) {
 				<div className="md:pt-2 md:pb-2 m-2 ">
 					<input
 						placeholder="Name"
-						className=" w-full md:w-96 md:text-[30px] border-2 p-1"
+						className=" w-full md:w-96 md:text-[20px] border-2 p-1"
 						onChange={(e) => props.setname(e.target.value)}
 					/>
 				</div>
@@ -24,7 +24,7 @@ function ContactForm(props: IContactForm) {
 					<input
 						placeholder="Email"
 						type={'email'}
-						className=" w-full md:w-96 md:text-[30px] border-2 p-1"
+						className=" w-full md:w-96 md:text-[20px] border-2 p-1"
 						onChange={(e) => props.setemail(e.target.value)}
 					/>
 				</div>
@@ -33,7 +33,7 @@ function ContactForm(props: IContactForm) {
 						id="mensagem"
 						name="mensagem"
 						rows={4}
-						className="w-full md:w-1/2 border-2 rounded"
+						className="w-full border-2 rounded"
 						placeholder="Message"
 						onChange={(e) => props.setmessage(e.target.value)}
 					/>
@@ -70,7 +70,7 @@ export default function ContactMe() {
 	}
 
 	return (
-		<div c>
+		<div>
 			<ContactForm
 				setname={setName}
 				setemail={setEmail}
