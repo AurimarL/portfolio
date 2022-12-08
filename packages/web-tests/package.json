@@ -1,0 +1,17 @@
+{
+    "name": "web-tests",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev:test": "playwright test",
+        "start-server": "cd ../../ && pnpm dev",
+        "e2e:test": "start-server-and-test start-server http://localhost:3000 dev:test"
+    },
+    "dependencies": {
+        "start-server-and-test": "^1.14.0",
+        "web": "*"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.27.1"
+    }
+}
