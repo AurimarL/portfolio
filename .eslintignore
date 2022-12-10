@@ -1,7 +1,0 @@
-build
-node_modules
-.github
-
-# Packages
-packages/ui/.storybook/*
-packages/ui/dist/*
