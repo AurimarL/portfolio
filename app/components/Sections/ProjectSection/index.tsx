@@ -2,6 +2,7 @@ import React from "react";
 import { Card, CardWithImage } from "ui/Card";
 import SectionSeparator from "../components/SectionSeparator";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import logo from "../../../../public/logo.svg";
 
 interface IProjectCard {
   image: String;
@@ -15,10 +16,8 @@ const ProjectCard = ({ image, CardTitle, CardText, Links }: IProjectCard) => {
       <CardWithImage Src={`${image}`}>
         <h2 className="card-title">{CardTitle}</h2>
         <p>{CardText}</p>
-        <div className="card-actions justify-end">
-          <label tabIndex={0} className="btn btn-square btn-ghost m-1">
-            <FaGithub size={50} href={`${Links}`} />
-          </label>
+        <div className="card-actions justify-end m-2">
+          <FaGithub size={48} />
         </div>
       </CardWithImage>
     </>
@@ -30,7 +29,7 @@ export const ProjectSection = () => {
     {
       name: "Ondando",
       image: "https://random.imagecdn.app/500/500",
-      GitHubLink: "#",
+      GitHubLink: "git",
       description:
         "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.",
     },

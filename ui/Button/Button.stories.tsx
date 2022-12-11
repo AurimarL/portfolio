@@ -15,7 +15,7 @@ export default {
   component: PrimaryButton,
   decorators: [
     (Story) => (
-      <Theme dataTheme="luxury">
+      <Theme dataTheme="cyberpunk">
         <Story />
       </Theme>
     ),

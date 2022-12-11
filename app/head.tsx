@@ -8,7 +8,9 @@ export default function Head() {
       />
 
       <meta name="description" content="Portfolio" />
+      
       <meta name="theme-color" content="#ffffff" />
+
       <link rel="icon" href="/logo.svg" />
       <link rel="manifest" href="/manifest.json" />
 

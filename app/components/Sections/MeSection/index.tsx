@@ -18,9 +18,8 @@ export const MeSection = () => {
         </div>
       </div>
       <div>
-        {/*Image LOGO */}
         <div className="relative h-[250px] w-[250px] md:h-[500px] md:w-[500px]">
-          <Image src={AuriLogo} fill alt="Logo" priority />
+          <Image src={AuriLogo} fill alt="Logo" priority sizes={"100vw"} />
         </div>
       </div>
     </div>

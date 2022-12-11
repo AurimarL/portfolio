@@ -1,14 +1,18 @@
-"use client";
-
 export default function Header() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-4xl">{`< Aurimar Lopes />`}</a>
+        <a className="btn btn-ghost normal-case text-4xl" href="/">{`< Aurimar Lopes />`}</a>
       </div>
       <div className="flex-none md:block hidden">
-        <a className="btn btn-ghost normal-case text-2xl">{`< Skills />`}</a>
-        <a className="btn btn-ghost normal-case text-2xl">{`< Projetos />`}</a>
+        <a
+          className="btn btn-ghost normal-case text-2xl"
+          href="#Skills"
+        >{`< Skills />`}</a>
+        <a
+          className="btn btn-ghost normal-case text-2xl"
+          href="#Projects"
+        >{`< Projetos />`}</a>
       </div>
       <div className="flex-none md:hidden">
         <div className="dropdown  dropdown-end">
@@ -32,10 +36,16 @@ export default function Header() {
             className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>{`< Skills />`}</a>
+              <a
+                href="#Skills"
+                className="btn btn-ghost normal-case text-2xl"
+              >{`< Skills />`}</a>
             </li>
             <li>
-              <a>{`< Projects />`}</a>
+              <a
+                href="#Projects"
+                className="btn btn-ghost normal-case text-2xl"
+              >{`< Projects />`}</a>
             </li>
           </ul>
         </div>

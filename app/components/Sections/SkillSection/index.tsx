@@ -51,7 +51,7 @@ const Skills = [
 export const SkillSection = () => {
   return (
     <div>
-      <SectionSeparator placeHolder={`< Skills />`} />
+      <SectionSeparator  placeHolder={`< Skills />`} />
       <div className="flex flex-col gap-2">
         {Skills.map((skill, k) => {
           return (
