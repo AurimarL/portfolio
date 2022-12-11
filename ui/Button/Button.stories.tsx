@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Button } from ".";
+import { PrimaryButton } from ".";
 import { Theme } from "react-daisyui";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
@@ -12,7 +12,7 @@ export default {
    * to learn how to generate automatic titles
    */
   title: "Button",
-  component: Button,
+  component: PrimaryButton,
   decorators: [
     (Story) => (
       <Theme dataTheme="luxury">
@@ -20,8 +20,8 @@ export default {
       </Theme>
     ),
   ],
-} as ComponentMeta<typeof Button>;
+} as ComponentMeta<typeof PrimaryButton>;
 
-export const Primary: ComponentStory<typeof Button> = () => (
-  <Button text={"Button"}></Button>
+export const Primary: ComponentStory<typeof PrimaryButton> = () => (
+  <PrimaryButton text={"Button"}></PrimaryButton>
 );
