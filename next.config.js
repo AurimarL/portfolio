@@ -4,7 +4,7 @@ const withPWA = require("@ducanh2912/next-pwa").default({
   dest: "public",
   cacheStartUrl: false,
   workboxOptions: { disableDevLogs: true },
-  disable: process.env.NODE_ENV === "production",
+  disable: !process.env.NODE_ENV === "production",
 });
 
 const nextConfig = withPWA({

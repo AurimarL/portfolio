@@ -9,14 +9,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="cyberpunk">
+    <html lang="en" data-theme="lofi">
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
 
-      <body data-theme="cyberpunk">
+      <body data-theme="lofi">
         <div className="container mx-auto m-2 ">
           <Header />
           <main className=" flex items-center justify-center ">{children}</main>
