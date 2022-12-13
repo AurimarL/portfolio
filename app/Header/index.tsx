@@ -2,15 +2,15 @@ export default function Header() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-4xl" href="/">{`< Aurimar Lopes />`}</a>
+        <a className="btn btn-ghost normal-case md:text-4xl text-sm" href="/">{`< Aurimar Lopes />`}</a>
       </div>
       <div className="flex-none md:block hidden">
         <a
-          className="btn btn-ghost normal-case text-2xl"
+          className="btn btn-ghost normal-case md:text-2xl"
           href="#Skills"
         >{`< Skills />`}</a>
         <a
-          className="btn btn-ghost normal-case text-2xl"
+          className="btn btn-ghost normal-case md:text-2xl"
           href="#Projects"
         >{`< Projetos />`}</a>
       </div>
