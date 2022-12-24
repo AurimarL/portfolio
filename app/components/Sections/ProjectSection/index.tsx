@@ -1,8 +1,9 @@
 import React from "react";
-import { Card, CardWithImage } from "ui/Card";
+import { CardWithImage } from "ui/Card";
 import SectionSeparator from "../components/SectionSeparator";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import logo from "../../../../public/logo.svg";
+import { FaGithub } from "react-icons/fa";
+import { ImEarth } from "react-icons/im";
+import Link from "next/link";
 
 interface IProjectCard {
   image: String;
@@ -17,7 +18,12 @@ const ProjectCard = ({ image, CardTitle, CardText, Links }: IProjectCard) => {
         <h2 className="card-title">{CardTitle}</h2>
         <p>{CardText}</p>
         <div className="card-actions justify-end m-2">
-          <FaGithub size={48} />
+          <Link href={`${Links}`} className="no-underline text-black">
+            <ImEarth size={48} />
+          </Link>
+          <Link href={`${Links}`} className="no-underline text-black">
+            <FaGithub size={48} />
+          </Link>
         </div>
       </CardWithImage>
     </>
@@ -27,11 +33,11 @@ const ProjectCard = ({ image, CardTitle, CardText, Links }: IProjectCard) => {
 export const ProjectSection = () => {
   const Projects = [
     {
-      name: "Ondando",
-      image: "https://random.imagecdn.app/500/500",
-      GitHubLink: "git",
-      description:
-        "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.",
+      name: "AGaleria",
+      image:
+        "https://res.cloudinary.com/djlawikle/image/upload/v1671903450/portfolio/agaleria_pc4jdp.png",
+      GitHubLink: "https://agaleria.vercel.app",
+      description: "Galeria de imagens",
     },
     {
       name: "Soon",
