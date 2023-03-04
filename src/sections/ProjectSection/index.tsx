@@ -1,8 +1,6 @@
 import React from "react";
-import { Card, CardWithImage } from "ui/Card";
-import SectionSeparator from "../components/SectionSeparator";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import logo from "../../../../public/logo.svg";
+import { CardWithImage } from "@/components/Card";
+import { FaGithub } from "react-icons/fa";
 
 interface IProjectCard {
   image: String;
@@ -49,8 +47,7 @@ export const ProjectSection = () => {
     },
   ];
   return (
-    <div>
-      <SectionSeparator placeHolder={`< Project />`} />
+    <>
       <div className="grid md:grid-cols-3 gap-2">
         {Projects.map((project, k) => {
           return (
@@ -65,6 +62,6 @@ export const ProjectSection = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };

@@ -5,7 +5,6 @@ export default function Header() {
         <a
           className="btn btn-ghost normal-case md:text-4xl text-sm"
           href="/"
-          onClick={() => null}
         >{`< Aurimar Lopes />`}</a>
       </div>
       <div className="flex-none md:block hidden">
@@ -17,6 +16,10 @@ export default function Header() {
           className="btn btn-ghost normal-case md:text-2xl"
           href="#Projects"
         >{`< Projetos />`}</a>
+         <a
+          className="btn btn-ghost normal-case md:text-2xl"
+          href="#Contact"
+        >{`< Contact />`}</a>
       </div>
       <div className="flex-none md:hidden">
         <div className="dropdown  dropdown-end">

@@ -1,5 +1,4 @@
-import { Card } from "ui/Card";
-import SectionSeparator from "../components/SectionSeparator";
+import { Card } from "@/components/Card";
 
 export interface ISkillCard {
   CardTitle: String;
@@ -50,9 +49,8 @@ const Skills = [
 // Aproveitar a listagem das skills para deixar um Heart Like ligado a blockchain
 export const SkillSection = () => {
   return (
-    <div>
-      <SectionSeparator  placeHolder={`< Skills />`} />
-      <div className="flex flex-col gap-2">
+    <>
+      <div className="flex flex-row gap-2">
         {Skills.map((skill, k) => {
           return (
             <div key={k}>
@@ -63,6 +61,6 @@ export const SkillSection = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };

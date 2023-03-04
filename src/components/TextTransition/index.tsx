@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import ReactTextTransition from "react-text-transition";
-
 interface ITextTransition {
   Texts: String[];
 }

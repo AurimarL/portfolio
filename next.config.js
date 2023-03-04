@@ -1,13 +1,5 @@
 /** @type {import('next').NextConfig} */
-
-const withPWA = require("@ducanh2912/next-pwa").default({
-  dest: "public",
-  cacheStartUrl: false,
-  workboxOptions: { disableDevLogs: true },
-  disable: !process.env.NODE_ENV === "production",
-});
-
-const nextConfig = withPWA({
+const nextConfig = {
   experimental: {
     appDir: true,
   },
@@ -19,6 +11,6 @@ const nextConfig = withPWA({
       },
     ],
   },
-});
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
