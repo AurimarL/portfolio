@@ -9,6 +9,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "random.imagecdn.app",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 }
