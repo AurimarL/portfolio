@@ -1,7 +1,6 @@
 import React from "react";
 import { CardWithImage } from "@/components/Card";
 import { FaGithub } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 interface IProjectCard {
