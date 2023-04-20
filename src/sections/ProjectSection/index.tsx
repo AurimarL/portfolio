@@ -12,15 +12,13 @@ interface IProjectCard {
 const ProjectCard = ({ image, CardTitle, CardText, Links }: IProjectCard) => {
   return (
     <>
-      <CardWithImage Src={`${image}`}>
-        <h2 className="card-title">{CardTitle}</h2>
-        <p>{CardText}</p>
-        <div className="card-actions justify-end m-2">
-          <Link href={`${Links}`} className="no-underline text-black">
-            <FaGithub size={48} />
-          </Link>
-        </div>
-      </CardWithImage>
+      <Link href={`${Links}`} >
+        <CardWithImage Src={`${image}`}>
+          <h2 className="card-title">{CardTitle}</h2>
+          <p>{CardText}</p>
+          <div className="card-actions justify-end m-2"></div>
+        </CardWithImage>
+      </Link>
     </>
   );
 };
@@ -35,14 +33,14 @@ export const ProjectSection = () => {
       description: "Galeria de imagens",
     },
     {
-      name: "Soon",
-      image: "https://random.imagecdn.app/500/500",
-      GitHubLink: "#",
-      description:
-        "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.",
+      name: "Marketing Agency",
+      image:
+        "https://res.cloudinary.com/djlawikle/image/upload/v1682000300/Marketing-Agency-web.png",
+      GitHubLink: "https://landing-page-inky-kappa.vercel.app/",
+      description: "Marketing Agency Website",
     },
     {
-      name: "Brevemente",
+      name: "Soon",
       image: "https://random.imagecdn.app/500/500",
       GitHubLink: "#",
       description:
