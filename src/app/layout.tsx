@@ -1,12 +1,9 @@
-import Header from "@/components/Header";
 import "./globals.css";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { metadata as customMetadata } from "@/config/customMetadata";
 
-export const metadata = {
-  title: "Aurimar Lopes",
-  description: "Digital",
-};
-
+export const metadata = customMetadata;
 export default function RootLayout({
   children,
 }: {

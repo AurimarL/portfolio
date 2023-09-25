@@ -14,12 +14,13 @@ export default function Home() {
         <SkillSection />
       </section>
 
+     {/*
       <section id="Projects">
         <ProjectSection />
       </section>
-      <section id="Contact" className="bg-white overflow-hidden relative z-10">
+     3 <section id="Contact" className="bg-white overflow-hidden relative z-10">
         <ContactSection />
-      </section>
+  </section>*/}
     </main>
   );
 }
