@@ -1,26 +1,17 @@
-import ContactSection from "@/sections/ContactSection";
-import { MeSection } from "@/sections/MeSection";
-import { ProjectSection } from "@/sections/ProjectSection";
-import { SkillSection } from "@/sections/SkillSection";
+import AboutMe from "./_Sections/AboutMe";
+import ContactSection from "./_Sections/Contact";
+import { ProjectSection } from "./_Sections/Projects";
+import { SkillSection } from "./_Sections/Skills";
+
+// export const runtime = "edge";
 
 export default function Home() {
   return (
-    <main className="flex flex-col  items-center gap-2 ">
-      <section id="Me">
-        <MeSection />
-      </section>
-
-      <section id="Skills">
-        <SkillSection />
-      </section>
-
-     {/*
-      <section id="Projects">
-        <ProjectSection />
-      </section>
-     3 <section id="Contact" className="bg-white overflow-hidden relative z-10">
-        <ContactSection />
-  </section>*/}
-    </main>
+    <div className="flex flex-col gap-8 items-center justify-center">
+      <AboutMe />
+      <SkillSection />
+      <ProjectSection />
+      <ContactSection />
+    </div>
   );
 }

@@ -20,8 +20,8 @@ export interface ICardWithImage {
 export const CardWithImage = ({ children, Src }: ICardWithImage) => {
   return (
     <>
-      <div className="card card-compact border rounded-xl w-80  shadow-md ">
-        <figure className="relative h-[250px]">
+      <div className="card card-compact border rounded-xl w-80 h-80 pb-2 shadow-md ">
+        <figure className="relative h-60">
           <Image src={Src} alt="Shoes" fill />
         </figure>
         <div className="card-body bg-base-100">{children}</div>
