@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-theme="black" className="max-h-screen">
+    <html lang="en" data-theme="black">
       <body>
         <Header />
         <main>{children}</main>
