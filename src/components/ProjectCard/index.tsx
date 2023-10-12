@@ -29,7 +29,7 @@ export default function ProjectCard({
               src={image}
               alt={name}
               sizes="1x"
-              className="rounded-md object-cover md:hover:scale-150  transition-transform md:hover:border-white md:hover:border-2 md:hover:z-50 "
+              className="rounded-md object-cover md:hover:scale-150  transition-transform md:hover:border-white md:hover:border-2 md:devhover:z-50 "
             />
           </AspectRatio>
         </div>
