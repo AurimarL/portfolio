@@ -1,0 +1,57 @@
+import { IProjects } from "@/types";
+
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import Image from "next/image";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { FaGithub } from "react-icons/fa";
+import { TfiWorld } from "react-icons/tfi";
+import { Separator } from "../ui/separator";
+
+export default function ProjectCard({
+  image,
+  name,
+  description,
+  links,
+}: IProjects) {
+  return (
+    <Card className=" max-w-xl bg-transparent text-white h-full border-2 rounded-xl">
+      <CardHeader className="p-2">
+        <div className="w-full ">
+          <AspectRatio ratio={16 / 9}>
+            <Image
+              fill
+              src={image}
+              alt={name}
+              sizes="1x"
+              className="rounded-md object-cover hover:scale-150  transition-transform hover:border-white hover:border-2 hover:z-50 "
+            />
+          </AspectRatio>
+        </div>
+        <p className="text-2xl m-1 text-center">{name}</p>
+      </CardHeader>
+      <Separator />
+      <br />
+      <CardContent>
+        <p className="text-md md:text-xl">{description}</p>
+      </CardContent>
+      <CardFooter className="flex gap-2 animate-pulse">
+        {links.website ? (
+          <Link href={`${links.website}`} className="text-xl md:text-3xl">
+            <TfiWorld />
+          </Link>
+        ) : null}
+        {links.github ? (
+          <Link href={`${links.github}`} className="text-xl md:text-3xl ">
+            <FaGithub />
+          </Link>
+        ) : null}
+      </CardFooter>
+    </Card>
+  );
+}

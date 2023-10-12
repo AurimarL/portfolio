@@ -1,15 +1,15 @@
 const HeaderLinks: { title: string; link: string }[] = [
   {
     title: "< Skills />",
-    link: "#Skills",
+    link: "#skills",
   },
   {
     title: "< Projects />",
-    link: "#Projects",
+    link: "#projects",
   },
   {
     title: "< Contact />",
-    link: "#Contact",
+    link: "#contact",
   },
 ];
 

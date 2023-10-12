@@ -1,12 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import ReactTextTransition from "react-text-transition";
-interface ITextTransition {
-  Texts: String[];
-}
-export default function TextTransition({ Texts }: ITextTransition) {
-  const [index, setIndex] = useState(0);
 
+export default function TextTransition({ Texts }: { Texts: string[] }) {
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),

@@ -1,0 +1,22 @@
+{
+    "header": {
+        "skills": "",
+        "projects": "",
+        "contact": ""
+    },
+    "home": {
+        "about": {
+            "message": "Desenvolvedor Full Stack Aqui 👽",
+            "cliclavatar": "Click direito no Avatar",
+            "cliclavatarM": "Pressione o Avatar"
+        },
+        "projects": {
+            "trotiflex": "Criando uma experiência única de comércio eletrônico com experiência em Next.js, Shopify CMS e GraphQL.",
+            "nextmanifest": "Next Manifest é sua solução completa para criar, personalizar e hospedar arquivos e ícones Manifest.json para Progressive Web Apps (PWAs)."
+        },
+        "contact": {
+            "title": "📞 ENTRE EM CONTATO 📧",
+            "description": "📩 Envie uma mensagem para descobrir mais sobre os meus serviços e projetos. Estou ansioso para ouvir de você e responder a todas as suas perguntas!"
+        }
+    }
+}

@@ -4,12 +4,10 @@ import HeaderEnd from "./HeaderEnd";
 
 export default function Header() {
   return (
-    <header>
-      <nav className="navbar bg-base-100">
-        <HeaderStart />
-        <HeaderEnd />
-        <HeaderDropdown />
-      </nav>
+    <header className="flex justify-around ">
+      <HeaderStart />
+      <HeaderEnd />
+      <HeaderDropdown />
     </header>
   );
 }
