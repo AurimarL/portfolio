@@ -7,8 +7,13 @@ import {
   DropdownMenuItem,
 } from "../ui/dropdown-menu";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
-export default function HeaderDropdown() {
+export default function HeaderDropdown({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="md:hidden">
       <DropdownMenu>
@@ -33,10 +38,13 @@ export default function HeaderDropdown() {
           {HeaderLinks.map((e, k) => {
             return (
               <DropdownMenuItem key={k}>
-                <Link href={"/" + e.link}>{e.title}</Link>
+                <Button className="w-full bg-transparent border-2 text-black">
+                  <Link href={"/" + e.link}>{e.title}</Link>
+                </Button>
               </DropdownMenuItem>
             );
           })}
+          <DropdownMenuItem>{children}</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

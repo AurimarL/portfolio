@@ -1,5 +1,3 @@
-import { IProjects } from "@/types";
-
 import Link from "next/link";
 import {
   Card,
@@ -12,6 +10,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { FaGithub } from "react-icons/fa";
 import { TfiWorld } from "react-icons/tfi";
 import { Separator } from "../ui/separator";
+import { IProjects } from "@/types";
 
 export default function ProjectCard({
   image,
