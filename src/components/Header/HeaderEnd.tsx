@@ -7,7 +7,7 @@ export default function HeaderEnd() {
     <div className="md:flex hidden gap-2">
       <Link href={"/pdf"} className="hidden md:inline">
         <Button className="bg-transparent border hover:bg-white hover:text-black hover:scale-105 transition-transform">
-          Resume
+          {"< CV />"}
         </Button>
       </Link>
       {HeaderLinks.map((e, k) => {

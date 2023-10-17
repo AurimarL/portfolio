@@ -8,6 +8,6 @@ export default function DonwloadResumeButton({ data }: { data: IResumeData }) {
     <Button
       onClick={() => HandleResumeDownload({ data })}
       className="w-full bg-transparent border-2 text-black"
-    >{`< Resume />`}</Button>
+    >{`< CV />`}</Button>
   );
 }
