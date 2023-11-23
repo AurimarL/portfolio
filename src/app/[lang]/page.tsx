@@ -1,35 +1,14 @@
-import { getDictionary } from "@/lib/dictionaries";
-import AboutMe from "./_Sections/AboutMe";
-import ContactSection from "./_Sections/Contact";
-import ProjectSection from "./_Sections/Projects";
-import SkillSection from "./_Sections/Skills";
 import { Locale } from "@/i18n.config";
 
+// import { getDictionary } from "@/lib/dictionaries";
 // export const runtime = "edge";
 
-export default async function Home({ params }: { params: { lang: Locale } }) {
-  const {
-    home: {
-      about: { message, cliclavatar, cliclavatarM },
-      projects: { trotiflex, nextmanifest },
-      contact: { description, title },
-    },
-  } = await getDictionary(params.lang);
+export default function Home({ params }: { params: { lang: Locale } }) {
+  // const {} = await getDictionary(params.lang);
 
   return (
-    <main className="flex flex-col items-center gap-4 ">
-      <br />
-      <AboutMe
-        message={message}
-        clickavatar={cliclavatar}
-        cliclavatarM={cliclavatarM}
-      />
-      <br />
-      <SkillSection />
-      <br />
-      <ProjectSection Trotiflex={trotiflex} nextmanifest={nextmanifest} />
-      <br />
-      <ContactSection description={description} title={title} />
+    <main className="flex justify-center items-center h-screen">
+      <h1 className=" text-5xl">A Big Hello</h1>
     </main>
   );
 }
