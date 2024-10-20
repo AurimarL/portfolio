@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import { getResumeDictionary } from "@/lib/dictionaries";
-import { Locale } from "@/i18n.config";
+import type { Locale } from "@/i18n.config";
 import { Suspense } from "react";
 const Resume = dynamic(() => import("@/components/Resume"), { ssr: false });
 

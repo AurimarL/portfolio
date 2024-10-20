@@ -40,7 +40,7 @@ export default function Contact() {
             required
             rows={4}
             className="w-full p-2 bg-gray-800 border border-green-500 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
-          ></textarea>
+          />
         </div>
         <button
           type="submit"

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useRef } from "react";
-import { motion, useDragControls, PanInfo } from "framer-motion";
+import type React from "react";
+import { useState, useRef } from "react";
+import { motion, useDragControls, type PanInfo } from "framer-motion";
 
 interface DesktopIconProps {
   icon: React.ReactNode;

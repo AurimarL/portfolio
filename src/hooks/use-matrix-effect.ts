@@ -34,7 +34,7 @@ export function useMatrixEffect() {
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       ctx.fillStyle = '#0F0'
-      ctx.font = fontSize + 'px monospace'
+      ctx.font = `${fontSize}px monospace`
 
       for (let i = 0; i < rainDrops.length; i++) {
         const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length))

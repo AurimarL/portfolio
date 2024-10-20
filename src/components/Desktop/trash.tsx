@@ -24,6 +24,7 @@ export default function Trash() {
        <div className="grid grid-cols-3 gap-2">
             {trashContents.map((item, index) => (
               <motion.div
+                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 key={index}
                 whileHover={{ scale: 1.05 }}
                 className="flex flex-col items-center justify-center p-2 rounded-lg bg-gray-800 bg-opacity-50"

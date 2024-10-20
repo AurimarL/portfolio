@@ -24,6 +24,7 @@ export function ResumeLanguages({ data }: { data: IResumeLanguages }) {
       <Texto size={14}>{data.label}</Texto>
       <View>
         {data.items.map((e, i) => {
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
           return <Texto key={i}>{e.name}</Texto>;
         })}
       </View>
@@ -66,6 +67,7 @@ export function ResumeSkills({ data }: { data: IResumeSkill }) {
       <Texto size={14}>{data.label}</Texto>
       <View style={{ gap: 4 }}>
         {data.items.map((e, i) => {
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
           return <Texto key={i}>{e.name}</Texto>;
         })}
       </View>
@@ -76,10 +78,11 @@ export function ResumeSkills({ data }: { data: IResumeSkill }) {
 export function ResumeProjects({ data }: { data: IResumeProject }) {
   return (
     <View id="Projects" style={{ gap: 4 }}>
-      <Texto size={18}>{data.label + ":"}</Texto>
+      <Texto size={18}>{`${data.label}:`}</Texto>
       <View style={{ gap: 4 }}>
         {data.items.map((e, i) => {
           return (
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             <View key={i}>
               <Texto size={16}>{e.name}</Texto>
               <Texto size={14}>{e.description}</Texto>
@@ -94,10 +97,11 @@ export function ResumeProjects({ data }: { data: IResumeProject }) {
 export function ResumeExperience({ data }: { data: IResumeExperience }) {
   return (
     <View id="Experience" style={{ gap: 4 }}>
-      <Texto size={18}>{data.label + ":"}</Texto>
+      <Texto size={18}>{`${data.label}:`}</Texto>
       <View style={{ gap: 4 }}>
         {data.items.map((e, i) => {
           return (
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             <View key={i}>
               <View>
                 <Texto size={14}>{e.company}</Texto>
@@ -118,10 +122,11 @@ export function ResumeExperience({ data }: { data: IResumeExperience }) {
 export function ResumeEducation({ data }: { data: IResumeEducation }) {
   return (
     <View id="Education">
-      <Texto size={18}>{data.label + ":"}</Texto>
+      <Texto size={18}>{`${data.label}:`}</Texto>
       <View style={{ gap: 8 }}>
         {data.items.map((e, i) => {
           return (
+            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
             <View key={i}>
               <View>
                 <Texto>{e.school}</Texto>

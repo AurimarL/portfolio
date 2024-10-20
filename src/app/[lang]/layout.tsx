@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import { CustomMetadata } from "@/config/metadata";
-import { Locale } from "@/i18n.config";
+import type { Locale } from "@/i18n.config";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = CustomMetadata;
