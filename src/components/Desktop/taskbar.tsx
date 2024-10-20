@@ -36,7 +36,7 @@ export default function Taskbar({
     <div className="fixed bottom-0 left-0 right-0 bg-gray-900 bg-opacity-80 backdrop-blur-md p-2 flex justify-center items-center space-x-2">
       <button
         type="button"
-        className="p-2 rounded-lg hover:bg-gray-800 transition-colors text-green-500"
+        className="p-2 rounded-lg hover:bg-gray-800 transition-colors text-white"
         onClick={toggleStartMenu}
         aria-label="Open Start menu"
       >
@@ -52,7 +52,7 @@ export default function Taskbar({
       </button>
       <button
         type="button"
-        className="p-2 rounded-lg hover:bg-gray-800 transition-colors text-green-500"
+        className="p-2 rounded-lg hover:bg-gray-800 transition-colors text-white"
         aria-label="Search"
       >
         <Search size={24} />
@@ -61,7 +61,7 @@ export default function Taskbar({
         <button
           type="button"
           key={app.name}
-          className={`p-2 rounded-lg transition-colors text-green-500 ${
+          className={`p-2 rounded-lg transition-colors text-white ${
             activeApp === app.name ? "bg-gray-800" : "hover:bg-gray-800"
           }`}
           onClick={() => openApp(app.name)}
@@ -72,7 +72,7 @@ export default function Taskbar({
       ))}
       <button
         type="button"
-        className="p-2 rounded-lg hover:bg-gray-800 transition-colors text-green-500"
+        className="p-2 rounded-lg hover:bg-gray-800 transition-colors text-white"
         aria-label="More options"
       >
         <MoreHorizontal size={24} />

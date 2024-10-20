@@ -60,7 +60,7 @@ export default function DesktopIcon({
       onDragEnd={handleDragEnd}
     >
       <div
-        className="bg-gray-800 bg-opacity-50 p-3 rounded-lg mb-2 text-green-500"
+        className="bg-gray-800 bg-opacity-50 p-3 rounded-lg mb-2 text-white"
         onPointerDown={(e) => {
           if (!isMobile) {
             dragControls.start(e);
@@ -69,7 +69,7 @@ export default function DesktopIcon({
       >
         {icon}
       </div>
-      <span className="text-sm text-center text-green-500">{label}</span>
+      <span className="text-sm text-center text-white">{label}</span>
     </motion.div>
   );
 }

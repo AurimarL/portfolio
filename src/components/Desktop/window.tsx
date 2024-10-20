@@ -77,21 +77,21 @@ export default function Window({
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="bg-gray-800 text-green-500 px-4 py-2 flex justify-between items-center cursor-move"
+            className="bg-gray-800 text-white px-4 py-2 flex justify-between items-center cursor-move"
             onPointerDown={handleHeaderPointerDown}
           >
             <h2 className="text-sm font-semibold">{title}</h2>
             <div className="flex space-x-2">
               <button
                 type="button"
-                className="text-green-500 hover:text-green-400 focus:outline-none"
+                className="text-white hover:text-gray-300 focus:outline-none"
                 aria-label="Minimize"
               >
                 <Minus size={16} />
               </button>
               <button
                 type="button"
-                className="text-green-500 hover:text-green-400 focus:outline-none"
+                className="text-white hover:text-gray-300 focus:outline-none"
                 aria-label={isMaximized ? "Restore" : "Maximize"}
                 onClick={toggleMaximize}
               >
@@ -100,7 +100,7 @@ export default function Window({
               <button
                 type="button"
                 onClick={onClose}
-                className="text-green-500 hover:text-red-500 focus:outline-none"
+                className="text-white hover:text-gray-300 focus:outline-none"
                 aria-label="Close window"
               >
                 <X size={16} />
@@ -108,7 +108,7 @@ export default function Window({
             </div>
           </motion.div>
           <motion.div
-            className="p-4 overflow-auto text-green-500"
+            className="p-4 overflow-auto text-white"
             style={{
               height: isMaximized ? "calc(100% - 2.5rem)" : "calc(100% - 3rem)",
             }}
