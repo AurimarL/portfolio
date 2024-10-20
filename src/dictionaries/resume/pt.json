@@ -1,109 +1,109 @@
 {
-    "contact": {
-        "label": "Contato",
-        "portfolioLink": "https://www.aurimar.vercel.app",
-        "mobile": "+351915791512",
-        "email": "aurimardev@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/aurimar-lopes",
-        "github": "https://github.com/AurimarL"
-    },
-    "skills": {
-        "label": "Habilidades",
-        "items": [
-            {
-                "name": "Next.js"
-            },
-            {
-                "name": "Bootstrap"
-            },
-            {
-                "name": "tailwindcss"
-            },
-            {
-                "name": "Idiomas",
-                "items": [
-                    {
-                        "name": "Português (Nativo ou Bilíngue)"
-                    },
-                    {
-                        "name": "Inglês (Profissional)"
-                    }
-                ]
-            }
-        ]
-    },
-    "certifications": {
-        "label": "Certificações",
-        "items": [
-            {
-                "name": "Creating Game With Unreal Engine and Blueprints"
-            },
-            {
-                "name": "The Complete 2023 Web Development Bootcamp"
-            }
-        ]
-    },
-    "experiences": {
-        "label": "Experiências",
-        "items": [
-            {
-                "title": "Frontend Developer",
-                "company": "Sota & SLAC, Sota Soluções",
-                "date": "junho de 2022 - dezembro de 2022 (7 meses)",
-                "description": "Como desenvolvedor front-end na Sota Soluções, fui responsável pela criação da interface do usuário e pelo design de todas as telas e componentes do seu aplicativo freelancer. Usei React Native para construir o aplicativo e trabalhei com mockups fornecidos no Figma. Para garantir uma navegação perfeita, implementei o React Navigation. Também utilizei Bootstrap e CSS para estilizar e otimizei o aplicativo para diferentes tamanhos de tela. Além disso, utilizei o Context State Management para gerenciar os dados e entradas usados no aplicativo. Minhas contribuições ajudaram a criar um aplicativo fácil de usar e visualmente atraente."
-            },
-            {
-                "title": "Full Stack Developer",
-                "company": "Fiverr",
-                "date": "novembro de 2021 - dezembro de 2022 (1 ano 2 meses)",
-                "description": "Como freelancer no Fiverr, criei forks de projetos de blockchain existentes, como PancakeSwap e Wonderland Money. Personalizei e modifiquei contratos inteligentes e componentes para criar versões novas e exclusivas desses projetos populares. Fui responsável pelo desenvolvimento de um site para um projeto NFT utilizando ReactJS e Tailwindcss. Implementei recursos como a capacidade de cunhar e negociar NFTs, bem como um painel de usuário. Também otimizei o site para desempenho e experiência do usuário."
-            },
-            {
-                "title": "Logistics Department",
-                "company": "Tempo-Team",
-                "date": "setembro de 2021 - novembro de 2021 (3 meses)",
-                "description": "Países Baixos"
-            },
-            {
-                "title": "Estagiário",
-                "company": "BYON",
-                "date": "fevereiro de 2021 - junho de 2021 (5 meses)",
-                "description": "Durante meu estágio na BYON, fui o único desenvolvedor responsável pela criação de uma aplicação de helpdesk usando o Microsoft Power Apps. Usei meu conhecimento da plataforma para projetar e desenvolver um aplicativo totalmente funcional que agilizou o processo de suporte. Isso envolveu a criação de formulários personalizados, fluxos de trabalho e automatização de tarefas, como atribuição e rastreamento de tickets. Também integrei o aplicativo com outras ferramentas da Microsoft, como SharePoint e Teams, para garantir uma comunicação perfeita entre os membros da equipe. Meu trabalho neste projeto demonstrou minha capacidade de trabalhar de forma independente e entregar soluções de alta qualidade dentro de um prazo apertado."
-            }
-        ]
-    },
-    "educations": {
-        "label": "Educação",
-        "items": [
-            {
-                "school": "Instituto Politécnico de Bragança",
-                "major": "Desenvolvimento de Software, Programação de Computadores",
-                "date": "janeiro de 2019 - julho de 2023"
-            }
-        ]
-    },
-    "projects": {
-        "label": "Projetos",
-        "items": [
-            {
-                "name": "Trotiflex",
-                "description": "Ecommerce dropshipping de trotinetes eletricas em Portugal"
-            },
-            {
-                "name": "Next Manifest",
-                "description": ""
-            }
-        ]
-    },
-    "languages": {
-        "label": "Linguas",
-        "items": [
-            {
-                "name": "Portugues"
-            },
-            {
-                "name": "Ingles"
-            }
-        ]
-    }
+	"contact": {
+		"label": "Contato",
+		"portfolioLink": "https://www.aurimar.vercel.app",
+		"mobile": "+351915791512",
+		"email": "aurimardev@gmail.com",
+		"linkedin": "https://www.linkedin.com/in/aurimar-lopes",
+		"github": "https://github.com/AurimarL"
+	},
+	"skills": {
+		"label": "Habilidades",
+		"items": [
+			{
+				"name": "Next.js"
+			},
+			{
+				"name": "Bootstrap"
+			},
+			{
+				"name": "tailwindcss"
+			},
+			{
+				"name": "Idiomas",
+				"items": [
+					{
+						"name": "Português (Nativo ou Bilíngue)"
+					},
+					{
+						"name": "Inglês (Profissional)"
+					}
+				]
+			}
+		]
+	},
+	"certifications": {
+		"label": "Certificações",
+		"items": [
+			{
+				"name": "Creating Game With Unreal Engine and Blueprints"
+			},
+			{
+				"name": "The Complete 2023 Web Development Bootcamp"
+			}
+		]
+	},
+	"experiences": {
+		"label": "Experiências",
+		"items": [
+			{
+				"title": "Frontend Developer",
+				"company": "Sota & SLAC, Sota Soluções",
+				"date": "junho de 2022 - dezembro de 2022 (7 meses)",
+				"description": "Como desenvolvedor front-end na Sota Soluções, fui responsável pela criação da interface do usuário e pelo design de todas as telas e componentes do seu aplicativo freelancer. Usei React Native para construir o aplicativo e trabalhei com mockups fornecidos no Figma. Para garantir uma navegação perfeita, implementei o React Navigation. Também utilizei Bootstrap e CSS para estilizar e otimizei o aplicativo para diferentes tamanhos de tela. Além disso, utilizei o Context State Management para gerenciar os dados e entradas usados no aplicativo. Minhas contribuições ajudaram a criar um aplicativo fácil de usar e visualmente atraente."
+			},
+			{
+				"title": "Full Stack Developer",
+				"company": "Fiverr",
+				"date": "novembro de 2021 - dezembro de 2022 (1 ano 2 meses)",
+				"description": "Como freelancer no Fiverr, criei forks de projetos de blockchain existentes, como PancakeSwap e Wonderland Money. Personalizei e modifiquei contratos inteligentes e componentes para criar versões novas e exclusivas desses projetos populares. Fui responsável pelo desenvolvimento de um site para um projeto NFT utilizando ReactJS e Tailwindcss. Implementei recursos como a capacidade de cunhar e negociar NFTs, bem como um painel de usuário. Também otimizei o site para desempenho e experiência do usuário."
+			},
+			{
+				"title": "Logistics Department",
+				"company": "Tempo-Team",
+				"date": "setembro de 2021 - novembro de 2021 (3 meses)",
+				"description": "Países Baixos"
+			},
+			{
+				"title": "Estagiário",
+				"company": "BYON",
+				"date": "fevereiro de 2021 - junho de 2021 (5 meses)",
+				"description": "Durante meu estágio na BYON, fui o único desenvolvedor responsável pela criação de uma aplicação de helpdesk usando o Microsoft Power Apps. Usei meu conhecimento da plataforma para projetar e desenvolver um aplicativo totalmente funcional que agilizou o processo de suporte. Isso envolveu a criação de formulários personalizados, fluxos de trabalho e automatização de tarefas, como atribuição e rastreamento de tickets. Também integrei o aplicativo com outras ferramentas da Microsoft, como SharePoint e Teams, para garantir uma comunicação perfeita entre os membros da equipe. Meu trabalho neste projeto demonstrou minha capacidade de trabalhar de forma independente e entregar soluções de alta qualidade dentro de um prazo apertado."
+			}
+		]
+	},
+	"educations": {
+		"label": "Educação",
+		"items": [
+			{
+				"school": "Instituto Politécnico de Bragança",
+				"major": "Desenvolvimento de Software, Programação de Computadores",
+				"date": "janeiro de 2019 - julho de 2023"
+			}
+		]
+	},
+	"projects": {
+		"label": "Projetos",
+		"items": [
+			{
+				"name": "Trotiflex",
+				"description": "Ecommerce dropshipping de trotinetes eletricas em Portugal"
+			},
+			{
+				"name": "Next Manifest",
+				"description": ""
+			}
+		]
+	},
+	"languages": {
+		"label": "Linguas",
+		"items": [
+			{
+				"name": "Portugues"
+			},
+			{
+				"name": "Ingles"
+			}
+		]
+	}
 }

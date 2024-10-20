@@ -1,109 +1,109 @@
 {
-    "contact": {
-        "label": "Contact",
-        "portfolioLink": "https://www.aurimar.vercel.app",
-        "mobile": "+351915791512",
-        "email": "aurimardev@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/aurimar-lopes",
-        "github": "https://github.com/AurimarL"
-    },
-    "skills": {
-        "label": "Skills",
-        "items": [
-            {
-                "name": "Next.js"
-            },
-            {
-                "name": "Bootstrap"
-            },
-            {
-                "name": "tailwindcss"
-            },
-            {
-                "name": "Languages",
-                "items": [
-                    {
-                        "name": "Portuguese (Native or Bilingual)"
-                    },
-                    {
-                        "name": "English (Professional)"
-                    }
-                ]
-            }
-        ]
-    },
-    "certifications": {
-        "label": "Certifications",
-        "items": [
-            {
-                "name": "Creating Game With Unreal Engine and Blueprints"
-            },
-            {
-                "name": "The Complete 2023 Web Development Bootcamp"
-            }
-        ]
-    },
-    "experiences": {
-        "label": "Experiences",
-        "items": [
-            {
-                "title": "Frontend Developer",
-                "company": "Sota & SLAC, Sota Soluções",
-                "date": "June 2022 - December 2022 (7 months)",
-                "description": "As a front-end developer at Sota Solutions, I was responsible for creating the user interface and designing all screens and components of their freelance app. I used React Native to build the app and worked with mockups provided in Figma. To ensure seamless navigation, I implemented React Navigation. I also used Bootstrap and CSS for styling and optimized the app for different screen sizes. Additionally, I used Context State Management to handle the data and inputs used in the app. My contributions helped create a user-friendly and visually appealing app."
-            },
-            {
-                "title": "Full Stack Developer",
-                "company": "Fiverr",
-                "date": "November 2021 - December 2022 (1 year 2 months)",
-                "description": "As a freelancer on Fiverr, I created forks of existing blockchain projects like PancakeSwap and Wonderland Money. I customized and modified smart contracts and components to create new and unique versions of these popular projects. I was responsible for developing a website for an NFT project using ReactJS and Tailwindcss. I implemented features such as minting and trading NFTs, as well as a user dashboard. I also optimized the website for performance and user experience."
-            },
-            {
-                "title": "Logistics Department",
-                "company": "Tempo-Team",
-                "date": "September 2021 - November 2021 (3 months)",
-                "description": "Netherlands"
-            },
-            {
-                "title": "Intern",
-                "company": "BYON",
-                "date": "February 2021 - June 2021 (5 months)",
-                "description": "During my internship at BYON, I was the sole developer responsible for creating a helpdesk application using Microsoft Power Apps. I used my knowledge of the platform to design and develop a fully functional app that streamlined the support process. This involved creating custom forms, workflows, and automating tasks such as ticket assignment and tracking. I also integrated the app with other Microsoft tools like SharePoint and Teams to ensure seamless communication among team members. My work on this project demonstrated my ability to work independently and deliver high-quality solutions within tight deadlines."
-            }
-        ]
-    },
-    "educations": {
-        "label": "Education",
-        "items": [
-            {
-                "school": "Polytechnic Institute of Braganza",
-                "major": "Software Development, Computer Programming",
-                "date": "January 2019 - July 2023"
-            }
-        ]
-    },
-    "projects": {
-        "label": "Projects",
-        "items": [
-            {
-                "name": "Trotiflex",
-                "description": "Ecommerce dropshipping of eletric scooters in Portugal"
-            },
-            {
-                "name": "Next Manifest",
-                "description": ""
-            }
-        ]
-    },
-    "languages": {
-        "label": "languages",
-        "items": [
-            {
-                "name": "Portugues"
-            },
-            {
-                "name": "Ingles"
-            }
-        ]
-    }
+	"contact": {
+		"label": "Contact",
+		"portfolioLink": "https://www.aurimar.vercel.app",
+		"mobile": "+351915791512",
+		"email": "aurimardev@gmail.com",
+		"linkedin": "https://www.linkedin.com/in/aurimar-lopes",
+		"github": "https://github.com/AurimarL"
+	},
+	"skills": {
+		"label": "Skills",
+		"items": [
+			{
+				"name": "Next.js"
+			},
+			{
+				"name": "Bootstrap"
+			},
+			{
+				"name": "tailwindcss"
+			},
+			{
+				"name": "Languages",
+				"items": [
+					{
+						"name": "Portuguese (Native or Bilingual)"
+					},
+					{
+						"name": "English (Professional)"
+					}
+				]
+			}
+		]
+	},
+	"certifications": {
+		"label": "Certifications",
+		"items": [
+			{
+				"name": "Creating Game With Unreal Engine and Blueprints"
+			},
+			{
+				"name": "The Complete 2023 Web Development Bootcamp"
+			}
+		]
+	},
+	"experiences": {
+		"label": "Experiences",
+		"items": [
+			{
+				"title": "Frontend Developer",
+				"company": "Sota & SLAC, Sota Soluções",
+				"date": "June 2022 - December 2022 (7 months)",
+				"description": "As a front-end developer at Sota Solutions, I was responsible for creating the user interface and designing all screens and components of their freelance app. I used React Native to build the app and worked with mockups provided in Figma. To ensure seamless navigation, I implemented React Navigation. I also used Bootstrap and CSS for styling and optimized the app for different screen sizes. Additionally, I used Context State Management to handle the data and inputs used in the app. My contributions helped create a user-friendly and visually appealing app."
+			},
+			{
+				"title": "Full Stack Developer",
+				"company": "Fiverr",
+				"date": "November 2021 - December 2022 (1 year 2 months)",
+				"description": "As a freelancer on Fiverr, I created forks of existing blockchain projects like PancakeSwap and Wonderland Money. I customized and modified smart contracts and components to create new and unique versions of these popular projects. I was responsible for developing a website for an NFT project using ReactJS and Tailwindcss. I implemented features such as minting and trading NFTs, as well as a user dashboard. I also optimized the website for performance and user experience."
+			},
+			{
+				"title": "Logistics Department",
+				"company": "Tempo-Team",
+				"date": "September 2021 - November 2021 (3 months)",
+				"description": "Netherlands"
+			},
+			{
+				"title": "Intern",
+				"company": "BYON",
+				"date": "February 2021 - June 2021 (5 months)",
+				"description": "During my internship at BYON, I was the sole developer responsible for creating a helpdesk application using Microsoft Power Apps. I used my knowledge of the platform to design and develop a fully functional app that streamlined the support process. This involved creating custom forms, workflows, and automating tasks such as ticket assignment and tracking. I also integrated the app with other Microsoft tools like SharePoint and Teams to ensure seamless communication among team members. My work on this project demonstrated my ability to work independently and deliver high-quality solutions within tight deadlines."
+			}
+		]
+	},
+	"educations": {
+		"label": "Education",
+		"items": [
+			{
+				"school": "Polytechnic Institute of Braganza",
+				"major": "Software Development, Computer Programming",
+				"date": "January 2019 - July 2023"
+			}
+		]
+	},
+	"projects": {
+		"label": "Projects",
+		"items": [
+			{
+				"name": "Trotiflex",
+				"description": "Ecommerce dropshipping of eletric scooters in Portugal"
+			},
+			{
+				"name": "Next Manifest",
+				"description": ""
+			}
+		]
+	},
+	"languages": {
+		"label": "languages",
+		"items": [
+			{
+				"name": "Portugues"
+			},
+			{
+				"name": "Ingles"
+			}
+		]
+	}
 }

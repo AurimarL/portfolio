@@ -1,22 +1,22 @@
 {
-    "header": {
-        "skills": "",
-        "projects": "",
-        "contact": ""
-    },
-    "home": {
-        "about": {
-            "message": "Full Stack Developer Here 👽",
-            "cliclavatar": "Right Click The Avatar",
-            "cliclavatarM": "Press the Avatar"
-        },
-        "projects": {
-            "trotiflex": "Crafting a unique e-commerce experience with Next.js, Shopify CMS, and GraphQL expertise.",
-            "nextmanifest": "Next Manifest is your all-in-one solution for creating, customizing, and hosting Manifest.json files and icons for Progressive Web Apps (PWAs)."
-        },
-        "contact": {
-            "title": "📞 Get in touch 📧",
-            "description": "📩 Send a message to find out more about my services and projects. I look forward to hearing from you and answering all your questions!"
-        }
-    }
+	"header": {
+		"skills": "",
+		"projects": "",
+		"contact": ""
+	},
+	"home": {
+		"about": {
+			"message": "Full Stack Developer Here 👽",
+			"cliclavatar": "Right Click The Avatar",
+			"cliclavatarM": "Press the Avatar"
+		},
+		"projects": {
+			"trotiflex": "Crafting a unique e-commerce experience with Next.js, Shopify CMS, and GraphQL expertise.",
+			"nextmanifest": "Next Manifest is your all-in-one solution for creating, customizing, and hosting Manifest.json files and icons for Progressive Web Apps (PWAs)."
+		},
+		"contact": {
+			"title": "📞 Get in touch 📧",
+			"description": "📩 Send a message to find out more about my services and projects. I look forward to hearing from you and answering all your questions!"
+		}
+	}
 }

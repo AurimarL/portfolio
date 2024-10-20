@@ -7,18 +7,20 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata = CustomMetadata;
 
 export default function RootLayout({
-  children,
-  params,
+	children,
+	params,
 }: {
-  children: React.ReactNode;
-  params: { lang: Locale };
+	children: React.ReactNode;
+	params: {
+		lang: Locale;
+	};
 }) {
-  return (
-    <html lang={params.lang}>
-      <body>
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
+	return (
+		<html lang={params.lang}>
+			<body>
+				{children}
+				<Analytics />
+			</body>
+		</html>
+	);
 }
