@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { apps } from "@/config/apps";
 
 // Custom hooks
@@ -33,6 +33,7 @@ export default function Desktop() {
   const toggleStartMenu = () => {
     setIsStartMenuOpen(!isStartMenuOpen);
   };
+
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
       <canvas ref={checkMobileCanvasRef} className="hidden" />
@@ -44,6 +45,23 @@ export default function Desktop() {
         ref={desktopRef}
         className="relative z-10 p-4 flex flex-col items-center justify-center min-h-[calc(100vh-48px)]"
       >
+        <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-8 max-w-2xl"
+            >
+              <h1 className="text-4xl font-bold mb-4 text-green-500 cursor-default">
+                {"Welcome to My Portfolio"}
+              </h1>
+              <p className="text-lg text-green-300 cursor-default">
+                {`Explore my skills and projects by clicking on the desktop icons below. 
+                Feel free to navigate through the various apps to learn more about me and my work.`}
+              </p>
+            </motion.div>
+        </AnimatePresence>
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 mt-8">
           {apps.map((app) => (
             <DesktopIcon
