@@ -64,6 +64,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|api/auth|_vercel/insights|sitemap.xml|manifest.json|_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!api|api/auth|_vercel/insights|robots.txt|sitemap.xml|manifest.json|_next/static|_next/image|favicon.ico).*)"],
 }
 
