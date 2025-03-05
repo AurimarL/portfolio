@@ -16,7 +16,8 @@ export default function ProjectCard({
   image,
   name,
   description,
-  links,
+  link,
+  github,
 }: IProjects) {
   return (
     <Card className=" max-w-xl bg-transparent text-white h-full border-2 rounded-xl">
@@ -40,13 +41,13 @@ export default function ProjectCard({
         <p className="text-md md:text-xl">{description}</p>
       </CardContent>
       <CardFooter className="flex gap-2 animate-pulse">
-        {links.website ? (
-          <Link href={`${links.website}`} className="text-xl md:text-3xl">
+        {link ? (
+          <Link href={`${link}`} className="text-xl md:text-3xl">
             <TfiWorld />
           </Link>
         ) : null}
-        {links.github ? (
-          <Link href={`${links.github}`} className="text-xl md:text-3xl ">
+        {github ? (
+          <Link href={`${github}`} className="text-xl md:text-3xl ">
             <FaGithub />
           </Link>
         ) : null}

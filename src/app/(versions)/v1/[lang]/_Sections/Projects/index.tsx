@@ -1,15 +1,11 @@
 import React from "react";
 import ProjectCard from "@/components/ProjectCard";
-import { Projects } from "@/config/projects";
 
 export default function ProjectSection({
-  Trotiflex,
-  nextmanifest,
+  projects,
 }: {
-  Trotiflex: string;
-  nextmanifest: string;
+  projects: { name: string; description: string; image: string; link: string,github:string }[];
 }) {
-  const projects = Projects({ Trotiflex, nextmanifest });
   return (
     <section id="projects">
       <div className="grid md:grid-cols-2 gap-4">
@@ -20,7 +16,8 @@ export default function ProjectSection({
               name={project.name}
               description={project.description}
               image={project.image}
-              links={project.links}
+              link={project.link}
+              github={project.github}
             />
           );
         })}

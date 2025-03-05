@@ -6,9 +6,14 @@ const nextConfig = {
     },
     images: {
         remotePatterns: [
+            
             {
                 protocol: "https",
                 hostname: "random.imagecdn.app",
+            },
+            {
+                protocol: "https",
+                hostname: "iaura.app",
             },
             {
                 protocol: "https",

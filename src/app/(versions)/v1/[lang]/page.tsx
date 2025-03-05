@@ -11,7 +11,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
   const {
     home: {
       about: { message, cliclavatar, cliclavatarM },
-      projects: { trotiflex, nextmanifest },
+      projects,
       contact: { description, title },
     },
   } = await getDictionary(params.lang);
@@ -27,7 +27,7 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
       <br />
       <SkillSection />
       <br />
-      <ProjectSection Trotiflex={trotiflex} nextmanifest={nextmanifest} />
+      <ProjectSection projects={projects}/>
       <br />
       <ContactSection description={description} title={title} />
     </main>
