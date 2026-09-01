@@ -4,13 +4,19 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
-import { HeaderLinks } from "@/config/links";
-import { Button } from "../ui/button";
+export type MobileNavItem = {
+  title: string;
+  href: string;
+};
 
-export default function HeaderDropdown({
-  children,
+export default function MobileNavMenu({
+  links,
+  ariaLabel,
+  extraContent,
 }: {
-  children: React.ReactNode;
+  links: MobileNavItem[];
+  ariaLabel: string;
+  extraContent?: React.ReactNode;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -27,17 +33,15 @@ export default function HeaderDropdown({
 
   return (
     <div className="md:hidden">
-      <Button
+      <button
         type="button"
-        variant="ghost"
-        size="icon"
-        aria-label={isOpen ? "Close menu" : "Open menu"}
+        className="mobile-menu"
+        aria-label={ariaLabel}
         aria-expanded={isOpen}
         onClick={() => setIsOpen((prev) => !prev)}
-        className="relative z-50 h-10 w-10 rounded-md border border-white/10 bg-white/5 text-white hover:bg-white/10"
       >
-        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-      </Button>
+        {isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+      </button>
 
       {isOpen && (
         <>
@@ -50,36 +54,32 @@ export default function HeaderDropdown({
 
           <aside className="fixed right-0 top-0 z-50 flex h-full w-72 flex-col gap-4 border-l border-white/10 bg-[#101820] p-5 shadow-2xl">
             <div className="flex items-center justify-between border-b border-white/10 pb-4">
-              <span className="text-sm font-medium uppercase tracking-[0.2em] text-white/70">
+              <span className="text-xs font-medium uppercase tracking-[0.26em] text-white/70">
                 Menu
               </span>
-              <Button
+              <button
                 type="button"
-                variant="ghost"
-                size="icon"
                 aria-label="Close menu"
                 onClick={() => setIsOpen(false)}
-                className="h-8 w-8 text-white"
+                className="flex h-8 w-8 items-center justify-center rounded-md border border-white/10 text-white hover:bg-white/5"
               >
-                <X className="h-4 w-4" />
-              </Button>
+                <X className="h-4 w-4" aria-hidden="true" />
+              </button>
             </div>
 
             <nav className="flex flex-col gap-2">
-              {HeaderLinks.map((item) => (
+              {links.map((link) => (
                 <Link
-                  key={item.link}
-                  href={"/" + item.link}
+                  key={link.href}
+                  href={link.href}
                   onClick={() => setIsOpen(false)}
                   className="rounded-md border border-white/10 bg-white/5 px-3 py-3 text-sm font-medium text-white transition hover:border-cyan-400/60 hover:bg-cyan-400/10"
                 >
-                  {item.title}
+                  {link.title}
                 </Link>
               ))}
 
-              <div className="mt-2 border-t border-white/10 pt-3">
-                {children}
-              </div>
+              {extraContent ? <div className="mt-2 border-t border-white/10 pt-3">{extraContent}</div> : null}
             </nav>
           </aside>
         </>
