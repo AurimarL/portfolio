@@ -54,8 +54,15 @@ export default function Header({
               { title: t("Sobre", "About"), href: "#about" },
               { title: t("Contacto", "Contact"), href: "#contact" },
               { title: t("CV", "Resume"), href: cvHref },
-              { title: en ? "PT" : "EN", href: en ? "/pt" : "/en" },
             ]}
+            languageAction={
+              <Link
+                href={en ? "/pt" : "/en"}
+                className="inline-flex w-full items-center justify-center rounded-md border border-white/10 bg-[#121e27] px-3 py-2.5 text-sm font-medium text-white transition hover:border-cyan-400/50 hover:bg-[#172832] hover:text-cyan-300"
+              >
+                {en ? "PT" : "EN"}
+              </Link>
+            }
             extraContent={
               <Link
                 href="#contact"
