@@ -6,14 +6,15 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata = {
+  title: "Aurimar Lopes — Full Stack Developer",
+  description: "Portfólio de Aurimar Lopes, Full Stack Developer especializado em web, mobile, desktop e soluções de inteligência artificial.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-black text-white">
-      {children}
-    </div>
+    <html lang="pt" className="bg-[#101820]">
+      <body>{children}</body>
+    </html>
   );
 }
